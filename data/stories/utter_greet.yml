@@ -1,0 +1,10 @@
+stories:
+  - story: utter_greet (1)
+    steps:
+      - intent: greet
+        user: hi
+        entities: []
+      - action: utter_j5-ugk0qM
+    metadata:
+      group: utter_greet
+rules: []
