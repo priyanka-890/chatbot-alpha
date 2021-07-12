@@ -6,5 +6,5 @@ timezoneOffset: 0
 allowContextualQuestions: false
 instance:
   name: Default Instance
-  host: 'http://192.168.1.7:5005'
-  projectId: iThypyyoDAevj7eGH
+  host: 'http://localhost:5005'
+  projectId: 5B6J3qXPSa7Xbwfss

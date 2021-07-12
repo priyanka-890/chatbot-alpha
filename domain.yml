@@ -1,69 +1,22 @@
 actions:
-  - action_entity_submit
-  - action_entity_submit1
-  - actions_icd
-  - utter_ask_symptom
+  - action_botfront_disambiguation
+  - action_botfront_disambiguation_followup
+  - action_botfront_fallback
+  - action_botfront_mapping
   - utter_bye
   - utter_get_started
   - utter_hi
-  - utter_j5-ugk0qM
 entities: []
-forms:
-  extract_entities_form:
-    symptom:
-      - type: from_text
-  extract_icd_form:
-    symptom:
-      - type: from_text
+forms: {}
 intents:
   - chitchat.bye
   - chitchat.greet
-  - extract_entities
-  - extract_icd_codes
   - get_started
-  - greet
-  - icd
-responses:
-  utter_ask_symptom:
-    - language: en
-      text: |
-        Please enter patient disease/symptoms?
-  utter_bye:
-    - language: en
-      text: |-
-        bye
-
-        goodbye
-
-        bye bye
-
-        see you later
-  utter_greet:
-    - text: Hi. What are you looking for?
-    - text: Hello! What can I help you find today?
-  utter_hi:
-    - language: en
-      text: |-
-        hi
-
-        hello
-
-        hey ya
-
-        howdy
-  utter_j5-ugk0qM:
-    - language: en
-      text: |+
-        hello
-
-        hi
-
-        gm
-
+responses: {}
 session_config: {}
 slots:
+  disambiguation_message:
+    type: unfeaturized
   fallback_language:
     initial_value: en
     type: unfeaturized
-  symptom:
-    type: text
